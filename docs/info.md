@@ -16,4 +16,4 @@ My project involves Pulse Width Modulation (PWM), allowing the duty cycle to be 
 First, the reset should be activated and desactivated, and second, you can choose the combination of switches to observe the change in LED intensity.
 
 ## External hardware
-No external hardware is required.
+The external hardware includes one LED, a 1k ohm resistor, and three 2-position switches.
