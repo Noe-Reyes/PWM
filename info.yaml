@@ -16,13 +16,14 @@ project:
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
     - "tt_um_PWM.v"
+    - "PWM.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
+  ui[0]: "load 0"
+  ui[1]: "load 1"
+  ui[2]: "load 2"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
@@ -37,7 +38,7 @@ pinout:
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""
-  uo[7]: ""
+  uo[7]: "PWM"
 
   # Bidirectional pins
   uio[0]: ""
