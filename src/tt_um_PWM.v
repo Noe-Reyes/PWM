@@ -26,7 +26,7 @@ module tt_um_PWM (
 
     assign uo_out[6:0] = 7'b0000000;
     assign uio_oe = 0;
-    assign uio_out = 0;
+    assign uio_out = 0;//
     
 
 endmodule
