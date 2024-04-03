@@ -8,6 +8,7 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## How it works
+Pulse Width Modulation (PWM) is a technique used in electronics to control the average voltage applied to a load by rapidly switching a digital signal on and off at varying duty cycles. This method is commonly employed in applications such as motor speed control, LED brightness adjustment, and power regulation. By adjusting the duty cycle of the signal, PWM enables precise control over the output voltage or power, allowing for efficient and flexible manipulation of electrical devices.
 
 My project involves Pulse Width Modulation (PWM), allowing the duty cycle to be adjusted between 10% and 80% using 3 switches with 7 different combinations. Each combination increments the duty cycle by 10%. For example, '000' represents a 10% duty cycle, and '111' represents an 80% duty cycle. The PWM was designed for a frequency of 1KHz.
 
