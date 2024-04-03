@@ -15,7 +15,7 @@ My project involves Pulse Width Modulation (PWM), allowing the duty cycle to be 
 
 The above image represents the PWM module that was designed.
 
-| [2:0] LOAD | Porcentaje |
+| [2:0] LOAD | Duty Cicle |
 |------------|------------|
 | 000        | 10%        |
 | 001        | 20%        |
@@ -25,9 +25,12 @@ The above image represents the PWM module that was designed.
 | 101        | 60%        |
 | 110        | 70%        |
 | 111        | 80%        |
+
+In the previous table, the variation of the duty cycle is shown as a function of the LOAD input combination.
+
 ## How to test
 
-First, the reset should be activated and desactivated, and second, you can choose the combination of switches to observe the change in LED intensity.
+The LOAD input should be connected to a switch, CLK is connected to a 50MHz clock, and RESET to a button. To ensure proper operation, press RESET to set the initial conditions. Once this is done, choose the LOAD input combination to set the desired duty cycle.
 
 ## External hardware
 The external hardware includes one LED, a 1k ohm resistor, and three 2-position switches.
