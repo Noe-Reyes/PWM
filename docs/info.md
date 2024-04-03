@@ -11,6 +11,8 @@ You can also include images in this folder and reference them in the markdown. E
 
 My project involves Pulse Width Modulation (PWM), allowing the duty cycle to be adjusted between 10% and 80% using 3 switches with 7 different combinations. Each combination increments the duty cycle by 10%. For example, '000' represents a 10% duty cycle, and '111' represents an 80% duty cycle. The PWM was designed for a frequency of 1KHz.
 
+![PWM](https://github.com/Noe-Reyes/PWM/assets/165437989/25771c3a-0918-4a82-9fd9-5e00af549505)
+
 ## How to test
 
 First, the reset should be activated and desactivated, and second, you can choose the combination of switches to observe the change in LED intensity.
