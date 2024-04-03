@@ -13,6 +13,18 @@ My project involves Pulse Width Modulation (PWM), allowing the duty cycle to be 
 
 ![PWM](https://github.com/Noe-Reyes/PWM/assets/165437989/25771c3a-0918-4a82-9fd9-5e00af549505)
 
+The above image represents the PWM module that was designed.
+
+| [2:0] LOAD | Porcentaje |
+|------------|------------|
+| 000        | 10%        |
+| 001        | 20%        |
+| 010        | 30%        |
+| 011        | 40%        |
+| 100        | 50%        |
+| 101        | 60%        |
+| 110        | 70%        |
+| 111        | 80%        |
 ## How to test
 
 First, the reset should be activated and desactivated, and second, you can choose the combination of switches to observe the change in LED intensity.
