@@ -1,41 +1,31 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg)
 
-# Tiny Tapeout Verilog Project Template
+## How it works
+Pulse Width Modulation (PWM) is a technique used in electronics to control the average voltage applied to a load by rapidly switching a digital signal on and off at varying duty cycles. This method is commonly employed in applications such as motor speed control, LED brightness adjustment, and power regulation. By adjusting the duty cycle of the signal, PWM enables precise control over the output voltage or power, allowing for efficient and flexible manipulation of electrical devices.
 
-- [Read the documentation for project](docs/info.md)
+My project involves Pulse Width Modulation (PWM), allowing the duty cycle to be adjusted between 10% and 80% using 3 switches with 7 different combinations. Each combination increments the duty cycle by 10%. For example, '000' represents a 10% duty cycle, and '111' represents an 80% duty cycle. The PWM was designed for a frequency of 1KHz.
 
-## What is Tiny Tapeout?
 
-TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
+![PWM](https://github.com/Noe-Reyes/PWM/assets/165437989/048d0be0-40ac-4368-912a-0a85abb39774)
 
-To learn more and get started, visit https://tinytapeout.com.
+The above image represents the PWM module that was designed.
 
-## Verilog Projects
+| [2:0] LOAD | Duty Cicle |
+|------------|------------|
+| 000        | 10%        |
+| 001        | 20%        |
+| 010        | 30%        |
+| 011        | 40%        |
+| 100        | 50%        |
+| 101        | 60%        |
+| 110        | 70%        |
+| 111        | 80%        |
 
-1. Add your Verilog files to the `src` folder.
-2. Edit the [info.yaml](info.yaml) and update information about your project, paying special attention to the `source_files` and `top_module` properties. If you are upgrading an existing Tiny Tapeout project, check out our [online info.yaml migration tool](https://tinytapeout.github.io/tt-yaml-upgrade-tool/).
-3. Edit [docs/info.md](docs/info.md) and add a description of your project.
-4. Optionally, add a testbench to the `test` folder. See [test/README.md](test/README.md) for more information.
+In the previous table, the variation of the duty cycle is shown as a function of the LOAD input combination.
 
-The GitHub action will automatically build the ASIC files using [OpenLane](https://www.zerotoasiccourse.com/terminology/openlane/).
+## How to test
 
-## Enable GitHub actions to build the results page
+The LOAD input should be connected to a switch, CLK is connected to a 50MHz clock, and RESET to a button. To ensure proper operation, press RESET to set the initial conditions. Once this is done, choose the LOAD input combination to set the desired duty cycle.
 
-- [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
-
-## Resources
-
-- [FAQ](https://tinytapeout.com/faq/)
-- [Digital design lessons](https://tinytapeout.com/digital_design/)
-- [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
-- [Join the community](https://tinytapeout.com/discord)
-- [Build your design locally](https://docs.google.com/document/d/1aUUZ1jthRpg4QURIIyzlOaPWlmQzr-jBn3wZipVUPt4)
-
-## What next?
-
-- [Submit your design to the next shuttle](https://app.tinytapeout.com/).
-- Edit [this README](README.md) and explain your design, how it works, and how to test it.
-- Share your project on your social network of choice:
-  - LinkedIn [#tinytapeout](https://www.linkedin.com/search/results/content/?keywords=%23tinytapeout) [@TinyTapeout](https://www.linkedin.com/company/100708654/)
-  - Mastodon [#tinytapeout](https://chaos.social/tags/tinytapeout) [@matthewvenn](https://chaos.social/@matthewvenn)
-  - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@matthewvenn](https://twitter.com/matthewvenn)
+## External hardware
+The external hardware includes one LED, a 1k ohm resistor, and three 2-position switches.
